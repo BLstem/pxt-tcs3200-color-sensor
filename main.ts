@@ -9,6 +9,8 @@ enum color {
 //%color=#A9BCF5 icon="\uf1fc" block="tcs3200"
 namespace tcs3200 {
     let output = 0
+    let s0: number
+    let s1: number
     let s2: number
     let s3: number
     let out: number
@@ -24,20 +26,29 @@ namespace tcs3200 {
     }
 
     /**
-     * Calibrate the sensor.
+     * Connect the sensor.
      * @param time waiting time; eg: 50, 10, 30, 100, 1000
      */
-    //%block="Calibration S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time"
+    //%block="Connect colour sensor  S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time"
     //%blockExternalInputs=true
-    export function calibration(S0: DigitalPin, S1: DigitalPin, S2: DigitalPin, S3: DigitalPin, OUT: DigitalPin, time: number): void {
+    export function connect(S0: DigitalPin, S1: DigitalPin, S2: DigitalPin, S3: DigitalPin, OUT: DigitalPin, time: number): void {
+        s0= S0
+        s1 = S1
         s2 = S2
         s3 = S3
         out = OUT
         freq = time
+    }
+
+    /**
+     * Calibration the sensor.
+     */
+    //%block="Calibration"
+    export function calibration(): void{
 
         // set output frequency scale to 2%
-        pins.digitalWritePin(S0, 0)
-        pins.digitalWritePin(S1, 1)
+        pins.digitalWritePin(s0, 0)
+        pins.digitalWritePin(s1, 1)
 
         // approx. wave freq count
         pins.onPulsed(out, PulseValue.Low, function () {

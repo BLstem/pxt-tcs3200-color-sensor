@@ -4,7 +4,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -14,5 +15,12 @@
         "test.ts"
     ],
     "public": false,
-    "additionalFilePaths": []
+    "targetVersions": {
+        "target": "6.0.15",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
