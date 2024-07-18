@@ -9,7 +9,8 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "_local/zh-tw/pxt-tcs3200-color-sensor,json"
     ],
     "testFiles": [
         "test.ts"
