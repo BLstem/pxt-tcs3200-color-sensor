@@ -1,0 +1,8 @@
+{
+  "color.red|block": "紅",
+  "color.green|block": "綠",
+  "color.blue|block": "藍",
+  "tcs3200.connect|blcok": "設定顏色感應器  |S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time",
+  "tcs3200.calibration|block": "開始校正",
+  "tcs3200.color_choice|block": "讀取顏色數據: %choice"
+}
