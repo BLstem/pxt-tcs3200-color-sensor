@@ -2,7 +2,7 @@
   "color.red|block": "RED",
   "color.green|block": "GREEN",
   "color.blue|block": "BLUE",
-  "tcs3200.connect|blcok": "Connect the colour sensor  |S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time",
+  "tcs3200.connect|block": "Connect the colour sensor  |S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time",
   "tcs3200.calibration|block": "Start Calibration",
   "tcs3200.color_choice|block": "read color factor: %choice"
 }
