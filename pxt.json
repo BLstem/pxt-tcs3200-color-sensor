@@ -1,5 +1,5 @@
 {
-    "name": "pxt-tcs3200-color-sensor",
+    "name": "tcs3200-color-sensor",
     "version": "0.1.0",
     "description": "",
     "dependencies": {
@@ -9,7 +9,8 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "_locales/zh-tw/tcs3200-color-sensor-strings.json"
     ],
     "testFiles": [
         "test.ts"
