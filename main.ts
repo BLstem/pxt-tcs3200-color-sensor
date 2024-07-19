@@ -30,6 +30,7 @@ namespace tcs3200 {
      * @param time waiting time; eg: 50, 10, 30, 100, 1000
      */
     //%block="Connect the colour sensor  |S0 %S0|S1 %S1|S2 %S2|S3 %S3|OUT %OUT|time (ms)%time"
+    //% S0.fieldEditor="gridpicker" S0.fieldOptions.columns=4
     //%blockExternalInputs=true
     //%weight=100
     export function connect(S0: DigitalPin, S1: DigitalPin, S2: DigitalPin, S3: DigitalPin, OUT: DigitalPin, time: number): void {
