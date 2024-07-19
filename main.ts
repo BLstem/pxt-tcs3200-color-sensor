@@ -35,6 +35,7 @@ namespace tcs3200 {
     //% S2.fieldEditor="gridpicker" S2.fieldOptions.columns=4 S2.fieldOptions.tooltips="false"
     //% S3.fieldEditor="gridpicker" S3.fieldOptions.columns=4 S3.fieldOptions.tooltips="false"
     //% OUT.fieldEditor="gridpicker" OUT.fieldOptions.columns=4 OUT.fieldOptions.tooltips="false"
+    //% S0.defl=DigitalPin.P0 S1.defl=DigitalPin.P1 S2.defl=DigitalPin.P2 S3.defl=DigitalPin.P8 OUT.defl=DigitalPin.P12
     //%blockExternalInputs=true
     //%weight=100
     export function connect(S0: DigitalPin, S1: DigitalPin, S2: DigitalPin, S3: DigitalPin, OUT: DigitalPin, time: number): void {
